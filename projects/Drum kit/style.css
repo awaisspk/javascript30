@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background: url("./assets/bgc.jpg") no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.keys {
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.key {
+  width: 100px;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border: 2px solid #33ab9f;
+  border-radius: 10%;
+  transition: all 200ms;
+}
+
+kbd {
+  font-size: 2.5rem;
+}
+
+.key span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #a09319;
+}
+
+.pressed {
+  outline-offset: 10px;
+  outline: 2px solid yellow;
+}
